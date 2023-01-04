@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript Technical Document</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav id="navbar">
@@ -68,7 +76,7 @@
     <main id="main-doc">
       <section class="main-section" id="Introduction">
         <header>Introduction</header>
-        <div>
+        <div class="section-content">
           <p>
             JavaScript is a cross-platform, object-oriented scripting language.
             It is a small and lightweight language. Inside a host environment
@@ -104,7 +112,7 @@
       </section>
       <section class="main-section" id="What_you_should_already_know">
         <header>What you should already know</header>
-        <div>
+        <div class="section-content">
           <p>This guide assumes you have the following basic background:</p>
           <ul>
             <li>
@@ -121,7 +129,7 @@
       </section>
       <section class="main-section" id="JavaScript_and_Java">
         <header>JavaScript and Java</header>
-        <div>
+        <div class="section-content">
           <p>
             JavaScript and Java are similar in some ways but fundamentally
             different in some others. The JavaScript language resembles Java but
@@ -152,14 +160,14 @@
       </section>
       <section class="main-section" id="Hello_world">
         <header>Hello world</header>
-        <div>
+        <div class="section-content">
           <p>
             To get started with writing JavaScript, open the Scratchpad and
             write your first "Hello world" JavaScript code:
           </p>
           <div>
             <code
-              >function greetMe(yourName) { alert("Hello " + yourName); }
+              >function greetMe(yourName) { alert("Hello " + yourName); }<br />
               greetMe("World");</code
             >
           </div>
@@ -171,7 +179,7 @@
       </section>
       <section class="main-section" id="Variables">
         <header>Variables</header>
-        <div>
+        <div class="section-content">
           <p>
             You use variables as symbolic names for values in your application.
             The names of variables, called identifiers, conform to certain
@@ -194,7 +202,7 @@
       </section>
       <section class="main-section" id="Declaring_variables">
         <header>Declaring variables</header>
-        <div>
+        <div class="section-content">
           <p>You can declare a variable in three ways:</p>
           <p>With the keyword var. For example,</p>
           <div>
@@ -223,7 +231,7 @@
       </section>
       <section class="main-section" id="Variable_scope">
         <header>Variable scope</header>
-        <div>
+        <div class="section-content">
           <p>
             When you declare a variable outside of any function, it is called a
             global variable, because it is available to any other code in the
@@ -256,7 +264,7 @@
       </section>
       <section class="main-section" id="Global_variables">
         <header>Global variables</header>
-        <div>
+        <div class="section-content">
           <p>
             Global variables are in fact properties of the global object. In web
             pages the global object is window, so you can set and access global
@@ -273,7 +281,7 @@
       </section>
       <section class="main-section" id="Constants">
         <header>Constants</header>
-        <div>
+        <div class="section-content">
           <p>
             You can create a read-only, named constant with the const keyword.
             The syntax of a constant identifier is the same as for a variable
@@ -298,8 +306,9 @@
           </p>
           <div>
             <code
-              >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
-              WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+              >// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; //
+              THIS<br />
+              WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;<br />
               //statements }</code
             >
           </div>
@@ -317,7 +326,7 @@
       </section>
       <section class="main-section" id="Data_types">
         <header>Data types</header>
-        <div>
+        <div class="section-content">
           <p>The latest ECMAScript standard defines seven data types:</p>
           <ul>
             <li>
@@ -353,7 +362,7 @@
       </section>
       <section class="main-section" id="if...else_statement">
         <header>if...else statement</header>
-        <div>
+        <div class="section-content">
           <p>
             Use the if statement to execute a statement if a logical condition
             is true. Use the optional else clause to execute a statement if the
@@ -375,8 +384,8 @@
           </p>
           <div>
             <code
-              >if (condition_1) { statement_1; } else if (condition_2) {
-              statement_2; } else if (condition_n) { statement_n; } else {
+              >if (condition_1) { statement_1; } else if (condition_2) {<br />
+              statement_2; } else if (condition_n) { statement_n; } else {<br />
               statement_last; }</code
             >
           </div>
@@ -416,7 +425,7 @@
       </section>
       <section class="main-section" id="while_statement">
         <header>while statement</header>
-        <div>
+        <div class="section-content">
           <p>
             A while statement executes its statements as long as a specified
             condition evaluates to true. A while statement looks as follows:
@@ -462,7 +471,7 @@
       </section>
       <section class="main-section" id="Function_declarations">
         <header>Function declarations</header>
-        <div>
+        <div class="section-content">
           <p>
             A function definition (also called a function declaration, or
             function statement) consists of the function keyword, followed by:
@@ -504,7 +513,7 @@
       </section>
       <section class="main-section" id="Reference">
         <header>Reference</header>
-        <div>
+        <div class="section-content">
           <ul>
             <li>
               All the documentation in this page is taken from
@@ -514,5 +523,8 @@
         </div>
       </section>
     </main>
+    <div id="scroll">
+      <a href="#navbar">⬆️</a>
+    </div>
   </body>
 </html>
